@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { TestpageComponent } from './testpage/testpage.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { NotfoundcomponentComponent } from './notfoundcomponent/notfoundcomponent.component';
+import { TestformComponent } from './testform/testform.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomepageComponent},
   { path: 'testpage', component: TestpageComponent},
+  { path: 'testform', component: TestformComponent},
   { path: '**', component: NotfoundcomponentComponent}
 ];
 
@@ -18,7 +20,8 @@ const appRoutes: Routes = [
     AppComponent,
     TestpageComponent,
     HomepageComponent,
-    NotfoundcomponentComponent
+    NotfoundcomponentComponent,
+    TestformComponent
   ],
   imports: [
     BrowserModule,
